@@ -31,23 +31,23 @@ module "eventhub" {
   tags               = local.common_tags
 }
 
-# module "databricks" {
-#   source              = "./modules/databricks"
-#   resource_group_name = module.resource_group.name
-#   location           = var.location
-#   workspace_name     = var.workspace_name
-#   tags               = local.common_tags
-# }
+module "databricks" {
+  source              = "./modules/databricks"
+  resource_group_name = module.resource_group.name
+  location           = var.location
+  workspace_name     = var.workspace_name
+  tags               = local.common_tags
+}
 
-# module "aks" {
-#   source              = "./modules/aks"
-#   resource_group_name = module.resource_group.name
-#   location           = var.location
-#   cluster_name       = var.cluster_name
-#   node_count         = var.node_count
-#   vm_size            = var.vm_size
-#   environment        = var.environment
-# }
+module "aks" {
+  source              = "./modules/aks"
+  resource_group_name = module.resource_group.name
+  location           = var.location
+  cluster_name       = var.cluster_name
+  node_count         = var.node_count
+  vm_size            = var.vm_size
+  environment        = var.environment
+}
 
 # module "acr" {
 #   source              = "./modules/acr"
