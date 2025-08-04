@@ -22,14 +22,14 @@ module "datalake" {
   tags                  = local.common_tags
 }
 
-# module "eventhub" {
-#   source              = "./modules/eventhub"
-#   resource_group_name = module.resource_group.name
-#   location           = var.location
-#   namespace_name     = var.namespace_name
-#   eventhub_name      = var.eventhub_name
-#   tags               = local.common_tags
-# }
+module "eventhub" {
+  source              = "./modules/eventhub"
+  resource_group_name = module.resource_group.name
+  location           = var.location
+  namespace_name     = var.namespace_name
+  eventhub_name      = var.eventhub_name
+  tags               = local.common_tags
+}
 
 # module "databricks" {
 #   source              = "./modules/databricks"
