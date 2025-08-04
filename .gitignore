@@ -1,0 +1,49 @@
+# === Terraform ===
+*.tfstate
+*.tfstate.*
+.terraform/
+.crash/
+*.tfplan
+*.backup
+.terraform.lock.hcl
+.terraform/
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+env/
+venv/
+pip-wheel-metadata/
+*.log
+*.sqlite3
+
+# === VSCode ===
+.vscode/
+*.code-workspace
+
+# === Docker ===
+*.tar
+*.log
+
+# === Kubernetes secrets ===
+*secret*.yaml
+
+# === CI/CD ===
+# Azure DevOps / GitHub Actions artifacts (caso use)
+*.coverage
+coverage.*
+*.log
+*.pytest_cache/
+*.mypy_cache/
+*.tox/
+.nox/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
