@@ -49,10 +49,10 @@ module "aks" {
   environment        = var.environment
 }
 
-# module "acr" {
-#   source              = "./modules/acr"
-#   resource_group_name = module.resource_group.name
-#   location           = var.location
-#   acr_name           = var.acr_name
-#   tags               = local.common_tags
-# }
+module "acr" {
+  source              = "./modules/acr"
+  resource_group_name = module.resource_group.name
+  location           = var.location
+  acr_name           = var.acr_name
+  tags               = local.common_tags
+}

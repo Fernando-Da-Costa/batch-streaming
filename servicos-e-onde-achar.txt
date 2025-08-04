@@ -8,19 +8,19 @@
        ├─ eventhub/
        ├─ adls/
        └─ keyvault/
-
 /src/
   ├─ batch_job/
   │    └─ process_csv_to_parquet.py
   └─ streaming_job/
        └─ eventhub_to_delta.py
-
 /deploy/
   └─ kubernetes/
        └─ deployment.yaml
-
 /ci-cd/
   └─ azure-pipelines.yml
+
+
+
 
 
 1. Grupos de recursos
