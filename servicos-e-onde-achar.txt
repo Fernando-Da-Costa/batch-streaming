@@ -33,7 +33,7 @@
 2. Contas de armazenamento
 
     Storage Account (Data Lake):
-    Nome: stdatalakebatchdev
+    Nome: tfstatebatchstreaming
     Tipo: StorageV2
     Localização: eastus
 

@@ -6,21 +6,21 @@ module "resource_group" {
   tags     = local.common_tags
 }
 
-# module "keyvault" {
-#   source              = "./modules/keyvault"
-#   resource_group_name = module.resource_group.name
-#   location           = var.location
-#   keyvault_name      = var.keyvault_name
-#   tags               = local.common_tags
-# }
+module "keyvault" {
+  source              = "./modules/keyvault"
+  resource_group_name = module.resource_group.name
+  location           = var.location
+  keyvault_name      = var.keyvault_name
+  tags               = local.common_tags
+}
 
-# module "datalake" {
-#   source                = "./modules/datalake"
-#   resource_group_name   = module.resource_group.name
-#   location              = var.location
-#   storage_account_name  = var.storage_account_name
-#   tags                  = local.common_tags
-# }
+module "datalake" {
+  source                = "./modules/datalake"
+  resource_group_name   = module.resource_group.name
+  location              = var.location
+  storage_account_name  = var.storage_account_name
+  tags                  = local.common_tags
+}
 
 # module "eventhub" {
 #   source              = "./modules/eventhub"
