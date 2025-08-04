@@ -23,11 +23,6 @@
   └─ azure-pipelines.yml
 
 
-
-terraform plan -out=tfplan
-terraform apply -out=tfplan
-
-
 1. Grupos de recursos
 
     Resource Group:

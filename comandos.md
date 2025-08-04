@@ -15,3 +15,8 @@ az storage account create \
 az storage container create \
   --name tfstate \
   --account-name tfstatebatchstreaming
+
+
+
+terraform plan -out=tfplan
+terraform apply tfplan
